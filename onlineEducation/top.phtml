@@ -1,0 +1,20 @@
+<div class="head">
+	<div class="head-mail clearfix">
+		<div class="logo"><a href="/"><img src="/image/logo.png"/></a></div>
+		<div class="head-nav head-nav2">
+			<span class="<?php echo ($this->isNavHome ? 'active' : '');?>"><a href="<?php echo $this->url('home');?>">首页</a></span>
+			<span class="<?php echo ($this->isNavCourse ? 'active': '');?>"><a href="<?php echo '/course/all' ?>">在线课堂</a></span>
+			<span class="<?php echo ($this->isNavOffline ? 'active': '');?>"><a href="<?php echo '/course/transfer';?>">名师面授</a></span>
+			<span class="<?php echo ($this->isNavArticle ? 'active': '');?>"><a href="/article/index">免费资料</a></span>
+		</div>
+		<div class="login-register">
+			<a class="login-a" id="login">登录</a>
+			<a class="register-a" href="/user/regUser">注册</a>
+		</div>
+<!-- 		<div class="search-box"> -->
+<!-- 			<input class="input-01" name="" type="submit" value=""  /> -->
+<!-- 			<input class="input-02" name="" type="text" placeholder="搜索课程 文章" /> -->
+<!-- 		</div> -->
+	</div>
+
+</div>
