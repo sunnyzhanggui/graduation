@@ -1,0 +1,23 @@
+	create table course(
+		id int not null primary key auto_increment,
+		name varchar(40) not null,
+		kind varchar(20) not null,
+		collect_num int not null default 0,
+		click_num int not null default 0
+	);
+
+create table user(
+  id int not null primary key not null auto_increment,
+  name varchar(40) not null,
+ password varchar(20) not null
+);
+
+create table collection(
+   id int primary key auto_increment,
+   user_id int not null,
+   course_id int not null
+    );
+
+	 insert into course(name,kind,click_num) values('data structure','it',33);
+	 insert into course(name,kind,click_num) values('currency','finance',33);
+	  insert into course(name,kind,click_num) values('algebra','math',33);
